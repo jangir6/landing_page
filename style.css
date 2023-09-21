@@ -1,0 +1,132 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    /* background-color: wheat; */
+}
+header{
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./iit-jodhpur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background:rgba(0,0,0,0.2);
+    color: rgb(226, 169, 169); 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.logo{
+    width: 25%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+.menu{
+    width: 40%;
+    display: flex; 
+    justify-content: space-around;
+}
+.menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav .menu a:hover{
+    color: cadetblue;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+/* section {
+
+} */
+section h3{
+    font-size: 45px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0;
+}
+section p{
+    font-size: 22px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    /* color: rgb(32, 32, 32); */
+}
+/* .btn1{
+    background: white;
+    color: black;
+}
+.btn1:hover{
+    background: black;
+    color: white;
+}
+.btn2{
+    background: black;
+    color: white;
+}
+.btn2:hover{
+    background: white;
+    color: black;
+} */
+
+.change:after{
+    content: '';
+    animation: changetext 40s infinite linear;
+    color: cadetblue;
+}
+@keyframes changetext{
+    0%{content: " Delhi";}
+    4%{content: " Jodhpur";}
+    8%{content: " Kharagpur";}
+    12%{content: " Bombay";}
+    16%{content: " Kanpur";}
+    20%{content: " Guwahati";}
+    24%{content: " Madras";}
+    28%{content: " Goa";}
+    32%{content: " Roorkee";}
+    36%{content: " Hyderabad";}
+    40%{content: " Indore";}
+    44%{content: " Varanasi(BHU)";}
+    48%{content: " Gandhinagar";}
+    52%{content: " Ropar";}
+    56%{content: " Patna";}
+    60%{content: " Bhubaneswar";}
+    64%{content: " Dhanbad";}
+    68%{content: " Bhilai";}
+    72%{content: " Jammu";}
+    76%{content: " Dharwad";}
+    80%{content: " Tirupati";}
+    84%{content: " Palakkad";}
+    100%{content: " Mandi";}
+}
